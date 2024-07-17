@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <!-- Bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- icon.css -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- main.css -->
+    <link rel="stylesheet" href="css/style.css"/>  
+    <!-- media.css -->
+    <link rel="stylesheet" href="css/media.css"/>
+</head>
+<body>
+    <section>
+        <div class="container pt-2">
+            <h1 class="text-center p-3 text-muted">BookMarker</h1>
+            <img src="images/photo_2024-06-29_02-24-49.jpg" alt="My_logo">
+            <hr>
+
+            <div class="form my-5 py-5 text-center">
+                <h2 class="py-2">Bookmark your favorite sites </h2>
+                <div class="form-floating mb-3">
+                    <input oninput="validationMark(this)" type="text" class="form-control" id="name" placeholder="name@example.com">
+                    <label for="name" class="text-muted">Website Name</label>
+                  </div>
+                  <div class="form-floating">
+                    <input oninput="validationMark(this)" type="text" class="form-control mb-3" id="url" placeholder="Password">
+                    <label for="url" class="text-muted">Website Url</label>
+                  </div>
+                  <div class="form-floating">
+                    <input oninput="validationMark(this)" type="text" class="form-control mb-3" id="des" placeholder="Password">
+                    <label for="url" class="text-muted">Website Description</label>
+                  </div>
+                  <button id="addBtn" disabled >submit</button>
+                  <button id="addBtn2" class="d-none">update</button>
+            </div>
+            <hr>
+
+            <div class="out">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Number</td>
+                            <td>Web name</td>
+                            <td>Web Description</td>
+                            <td>Visit</td>
+                            <td>Update</td>
+                            <td>Delete</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="tableBody">
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- index.js -->
+<script src="js/index.js"></script>
+</body>
+</html>
